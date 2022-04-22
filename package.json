@@ -23,9 +23,11 @@
         "test:nowatch": "react-scripts test --watchAll=false",
         "eject": "react-scripts eject",
         "prepare": "husky install",
-        "lint": "eslint src --color",
-        "prettier:check": "prettier --check",
-        "prettier:fix": "prettier --write"
+        "lint": "eslint --color .",
+        "lint:fix": "eslint  --color --max-warnings=0 --fix .",
+        "lint-staged": "lint-staged --config lint-staged.config.js",
+        "prettier:check": "prettier --check .",
+        "prettier:fix": "prettier --write ."
     },
     "eslintConfig": {
         "extends": [
@@ -51,6 +53,8 @@
         "eslint": "^8.13.0",
         "eslint-plugin-react": "^7.29.4",
         "husky": "^7.0.0",
-        "prettier": "^2.6.2"
+        "lint-staged": "^12.4.0",
+        "prettier": "^2.6.2",
+        "tsc-files": "^1.1.3"
     }
 }
