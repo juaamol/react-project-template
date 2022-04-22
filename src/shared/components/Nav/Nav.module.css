@@ -1,0 +1,13 @@
+.Nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.Nav .Link {
+    padding: 4px 12px;
+    border-radius: 8px;
+    color: black;
+    background: #61dbfb;
+    text-decoration: none;
+}

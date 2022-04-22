@@ -7,6 +7,10 @@
     pointer-events: none;
 }
 
+.App .Nav {
+    margin-top: 1rem;
+}
+
 @media (prefers-reduced-motion: no-preference) {
     .AppLogo {
         animation: App-logo-spin infinite 20s linear;
